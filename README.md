@@ -12,10 +12,12 @@ OS type 64-bit and GNOME version 3.36.8.
 The R packages required are: 
 - dcifer
 - tidyverse
+- moire
 
-To install them, first install R4.2.3 and RStudio. Then, open RStudio and run the following commands: 
+To install them, first install R4.2.3 and RStudio. Then, open RStudio and run the following commands (install the remotes package before if needed, with `install.packages("remotes")`): 
 `install.packages("tidyverse")`
 `install.packages("dcifer")`
+`remotes::install_github("EPPIcenter/moire")`
 Alternatively, you can run this other command to install dcifer: 
 `remotes::install_github("EPPIcenter/dcifer", build_vignettes = TRUE, force = TRUE)`
 
