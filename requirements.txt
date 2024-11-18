@@ -2,7 +2,6 @@ jupyterlab
 numpy
 pandas
 matplotlib
-pyreadstat
 statsmodels
 scipy
 firthlogist

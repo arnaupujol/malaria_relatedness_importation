@@ -13,11 +13,7 @@ The R packages required are:
 - dcifer
 - tidyverse
 
-To install them, first install R4.2.3 and RStudio:
-`conda install -c conda-forge r-base=4.2.3`
-`conda install -c r rstudio`
-
-Open RStudio and run the following commands: 
+To install them, first install R4.2.3 and RStudio. Then, open RStudio and run the following commands: 
 `install.packages("tidyverse")`
 `install.packages("dcifer")`
 Alternatively, you can run this other command to install dcifer: 
@@ -28,7 +24,6 @@ All the python packages that are required are:
 - numpy
 - pandas
 - matplotlib
-- pyreadstat
 - statsmodels
 - scipy
 - firthlogist
@@ -57,11 +52,9 @@ And then activate the environment:
 `conda activate py39`
 
 Once activated, install the required packages:
-`conda install ipython jupyter jupyterlab numpy pandas geopandas>=0.9 matplotlib scipy>=1.7`
+`conda install python jupyter jupyterlab numpy pandas matplotlib statsmodels scipy geopandas`
 
-`conda install -c conda-forge contextily`
-
-`conda install -c anaconda openpyxl`
+`pip install firthlogist`
 
 Then, install the packages from the repositories [EpiFRIenDs 1.0](https://github.com/arnaupujol/epifriends), [stat_tools 1.0](https://github.com/arnaupujol/stat_tools), 
 [pregmal_pytools 1.0](https://github.com/arnaupujol/pregmal_pytools), [spatial_tools 1.0](https://github.com/arnaupujol/spatial_tools) and [genomics 1.0](https://github.com/arnaupujol/genomics).
