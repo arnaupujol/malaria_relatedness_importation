@@ -1,5 +1,5 @@
 
-# TITLE
+# Mobility and Plasmodium falciparum genomics to inform about malaria importation into southern Mozambique
 
 This repository contains the code used to generate the results of the analysis
 of the manuscript Pujol et al., 'TITLE', JOURNAL.
@@ -15,14 +15,18 @@ The R packages required are:
 - moire
 
 To install them, first install R4.2.3 and RStudio. Then, open RStudio and run the following commands (install the remotes package before if needed, with `install.packages("remotes")`): 
+
 `install.packages("tidyverse")`
+
 `install.packages("dcifer")`
+
 `remotes::install_github("EPPIcenter/moire")`
+
 Alternatively, you can run this other command to install dcifer: 
+
 `remotes::install_github("EPPIcenter/dcifer", build_vignettes = TRUE, force = TRUE)`
 
 All the python packages that are required are:
-- pyhon 3.9.16
 - numpy
 - pandas
 - matplotlib
@@ -30,6 +34,7 @@ All the python packages that are required are:
 - scipy
 - firthlogist
 - geopandas
+- contextily
 - jupyter lab
 
 And the following local packages:
@@ -56,10 +61,12 @@ And then activate the environment:
 Once activated, install the required packages:
 `conda install python jupyter jupyterlab numpy pandas matplotlib statsmodels scipy geopandas`
 
+`conda install conda-forge::contextily`
+
 `pip install firthlogist`
 
-Then, install the packages from the repositories [EpiFRIenDs 1.0](https://github.com/arnaupujol/epifriends), [stat_tools 1.0](https://github.com/arnaupujol/stat_tools), 
-[pregmal_pytools 1.0](https://github.com/arnaupujol/pregmal_pytools), [spatial_tools 1.0](https://github.com/arnaupujol/spatial_tools) and [genomics 1.0](https://github.com/arnaupujol/genomics).
+Then, install the packages from the repositories [stat_tools 1.0](https://github.com/arnaupujol/stat_tools), 
+[genmoz_pytools 1.0](https://github.com/arnaupujol/genmoz_pytools), [spatial_tools 1.0](https://github.com/arnaupujol/spatial_tools) and [genomics 1.0](https://github.com/arnaupujol/genomics).
 
 For this, clone the repositories or download and uncompress the zip file of the release, 
 and once there, run:
@@ -76,12 +83,8 @@ How to use the demos:
 To test the performance of the scripts, go to the `demos` directory and lunch
 Jupyter lab, for example by running `jupyter lab` in a Unix terminal. A data 
 directory would be required containing the databases required for the analyses. 
-The original data of Pujol et al. 'Detecting temporal and spatial malaria patterns 
-from first antenatal care visits', Nature Communications 2023 can be requested 
-by email to alfredo.mayor@isglobal.org. 
+The original data of Pujol et al. TITLE, JOURNAL can be requested 
+by email to arnau.pujol@isglobal.org. 
 
 All the Jupyter notebooks should run correctly. As they are by default, they
-show the expected output of each cell run and the computational time taken for
-the longest runs of the scripts. Most of the notebooks take a few minutes to
-run, only one or two can take more than one hour in a normal desktop computer.
-
+show the expected output of each cell run. 
