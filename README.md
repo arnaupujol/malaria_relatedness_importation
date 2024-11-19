@@ -59,6 +59,7 @@ And then activate the environment:
 `conda activate py39`
 
 Once activated, install the required packages:
+
 `conda install python jupyter jupyterlab numpy pandas matplotlib statsmodels scipy geopandas`
 
 `conda install conda-forge::contextily`
