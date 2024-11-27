@@ -1,8 +1,8 @@
 
-# Mobility and Plasmodium falciparum genomics to inform about malaria importation into southern Mozambique
+# Probabilities of malaria importation in southern Mozambique through parasite genomics and mobility patterns
 
 This repository contains the code used to generate the results of the analysis
-of the manuscript Pujol et al., 'TITLE', JOURNAL.
+of the manuscript Pujol et al., 'Probabilities of malaria importation in southern Mozambique through parasite genomics and mobility patterns', submitted to Nature Communications.
 
 Software requirements:
 ----------------------
