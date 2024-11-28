@@ -82,10 +82,33 @@ How to use the demos:
 ----------------------------
 
 To test the performance of the scripts, go to the `demos` directory and lunch
-Jupyter lab, for example by running `jupyter lab` in a Unix terminal. A data 
-directory would be required containing the databases required for the analyses. 
+Jupyter lab, for example by running `jupyter lab` in a Unix terminal. For R scripts, Rstudio can be loaded to 
+execute them. A data directory would be required containing the databases required for the analyses. 
 The original data of Pujol et al. TITLE, JOURNAL can be requested 
 by email to arnau.pujol@isglobal.org. 
 
 All the Jupyter notebooks should run correctly. As they are by default, they
 show the expected output of each cell run. 
+
+Steps to reproduce the analysis:
+---------------------------------
+
+In order to reproduce the whole analysis, we need to do the following steps: 
+
+- Run preprocessing_data_for_dcifer.ipynb: this will perform some pre-processing and produce a data frame that is ready to be called by the other scripts. The data path and filename needs to be consistently specified across all scripts. 
+
+- Run run_dcifer.R: This takes the previous output data as input and runs Dcifer to obtain the estimates of pairwise identity-by-descent and their p-values. The results need to be saved in a path and name that will be later called. 
+
+- Run run_moire.R: This script calculates the different metrics of polyclonality and complexity of infection. The results need to be saved in a path and name that will be later called. 
+
+The order of the following notebooks does not affect the performance and outcomes: 
+
+- Run population_characteristics.ipynb: this notebook produces statistics of the population characteristics from the outcome of preprocessing_data_for_dcifer.ipynb. 
+
+- Run human_mobility.ipynb: this notebook performs statistics on travel reports from he participants from the outcome of preprocessing_data_for_dcifer.ipynb. 
+
+- Run spatial_relatedness_analysis.ipynb: this notebook performs the spatial genetic relatedness analysis across distances and provinces in Mozambique. This notebook requires the outcomes from preprocessing_data_for_dcifer.ipynb and run_dcifer.R.
+
+- Run importation_analysis.ipynb: this notebook calculates the individual probabilities of importation, conducts case classification and conducts all the statistical and risk-factor analysis on travel and importation. It requires the outcomes from preprocessing_data_for_dcifer.ipynb, run_dcifer.R and run_moire.R.
+
+
