@@ -1,5 +1,5 @@
 
-# Probabilities of malaria importation in southern Mozambique through parasite genomics and mobility patterns
+# Estimating probabilities of malaria importation in southern Mozambique through *P. falciparum* genomics and mobility patterns
 
 This repository contains the code used to generate the results of the analysis
 of the manuscript Pujol et al., 'Estimating probabilities of malaria importation in southern Mozambique through *P. falciparum* genomics and mobility patterns', submitted to Nature Communications.
